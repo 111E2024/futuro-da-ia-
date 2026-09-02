@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #FFF8FA;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #FCE4EC;
+    --cor-destaque: #F6D77A;
+    --cor-texto: #5C4A4A;
 }
 
 body {
@@ -16,28 +15,33 @@ body {
     min-height: 100vh;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(220, 160, 180, 0.2);
 }
 
-h1{
-    color: var(--cor-destaque);
+h1 {
+    color: #E89AAA;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
+    border: 2px solid #F6D77A;
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    margin: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: var(--cor-texto);
+    transform: scale(1.03);
 }
